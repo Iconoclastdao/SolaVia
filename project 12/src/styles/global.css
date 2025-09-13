@@ -1,0 +1,57 @@
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6),
+              0 0 40px rgba(0, 255, 255, 0.4);
+}
+
+.holographic {
+  background: linear-gradient(45deg, #00ffff, #00bfff, #0080ff);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.classified-overlay {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.terminal-text {
+  font-family: "Orbitron", "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00ffff;
+}
+
+.social-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #1a1a1a; /* dark grey background */
+}
